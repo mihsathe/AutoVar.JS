@@ -28,7 +28,7 @@ You can run this test application by directly opening the VS project file with V
 Usage Example
 =====
 
-```
+```JavaScript
 window.onload = function () {
             var temp = new AutoVar('Rand.ashx', null, ["#area"]);
 
