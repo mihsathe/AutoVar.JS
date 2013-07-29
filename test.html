@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>AutoVar test</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="script/autovar.js"></script>
+    <script>
+        window.onload = function () {
+            var temp = new AutoVar('Rand.ashx', null, ["#area"]);
+
+            $("#button").click(function () {
+                alert("paused")
+                temp.pause();
+            })
+        }
+    </script>
+</head>
+<body>
+    <div id="area"></div>
+    <div id="button">pause</div>
+</body>
+</html>
